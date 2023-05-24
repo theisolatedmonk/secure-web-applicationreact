@@ -33,7 +33,7 @@ export default function Encryption() {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center sm:h-[600px] text-center sm:w-[600px]  p-2 gap-4">
+    <div className="flex flex-col items-center justify-center  text-center sm:w-[600px]  p-2 gap-4">
       <h1 className="text-3xl font-bold bg-slate-500 p-3 rounded-lg">Data Encryption and Decryption</h1>
       <div className="flex gap-6 ">
         <button
