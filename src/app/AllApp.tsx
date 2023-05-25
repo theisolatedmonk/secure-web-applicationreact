@@ -8,6 +8,7 @@ import CryptoJS from 'crypto-js';
 import Encryption from './Encryption';
 import PasswordAnalyser from './PasswordAnalyser';
 import PasswordGenerator from './PasswordGenerator';
+import Question from './Question';
 
 
 export default function AllApp() {
@@ -38,10 +39,17 @@ export default function AllApp() {
         >
           Password Generator
         </button>
+        <button
+          className="bg-yellow-400 p-2 rounded-lg"
+          onClick={() => handleComponentChange('question')}
+        >
+          Question Answer
+        </button>
       </div>
       {activeComponent === 'encryption' && <Encryption />}
       {activeComponent === 'analyser' && <PasswordAnalyser />}
       {activeComponent === 'generator' && <PasswordGenerator />}
+      {activeComponent === 'question' && <Question/>}
     </div>
   );
 }
