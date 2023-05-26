@@ -1,4 +1,5 @@
 "use client"
+import { link } from 'fs';
 import React, { useState } from 'react';
 
 interface Question {
@@ -107,7 +108,7 @@ const Question: React.FC = () => {
             </div>
           </div>
         ))}
-        <button type="submit" disabled={isSubmitDisabled} className="bg-blue-500 text-white px-4 py-2 mt-4 rounded">
+        <button type="submit" disabled={isSubmitDisabled} className="bg-blue-500 focus:bg-gray-800 text-white px-4 py-2 mt-4 rounded">
           Submit
         </button>
       </form>
