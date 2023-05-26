@@ -28,10 +28,10 @@ import Question from './Question';
     };
   
     return (
-      <div className="flex flex-col gap-4 items-center min-h-screen min-w-screen py-2 justify-center text-black bg-green-300 flex-wrap">
+      <div className="flex flex-col gap-4 items-center min-h-screen min-w-screen py-2 justify-center text-black  flex-wrap">
       <div className="flex gap-4">
         <button
-          className="bg-yellow-400 p-2 rounded-lg"
+          className="bg-yellow-400 p-2 rounded-lg "
           onClick={() => handleComponentChange('encryption')}
         >
           Data Encryption and Decryption
