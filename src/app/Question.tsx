@@ -77,13 +77,13 @@ const Question: React.FC = () => {
 
   const getMessage = (): string => {
     if (score >= 0 && score <= 25) {
-      return "You are not secure. Please learn Cyber Security.";
+      return "Your current level of security is inadequate. It is highly recommended that you educate yourself about Cyber Security for enhanced protection.";
     } else if (score > 25 && score <= 50) {
-      return "You are not enough secure. Please learn Cyber Security.";
+      return "Your security measures are insufficient. It is strongly advised to gain knowledge in Cyber Security to ensure comprehensive protection.";
     } else if (score > 50 && score <= 75) {
-      return "You are moderately secure. Please learn Cyber Security.";
+      return "Your security level is moderate. To further strengthen your defenses, it is advisable to acquire knowledge in Cyber Security.";
     } else {
-      return "You are secure. Please stay updated with Cyber Security for future security.";
+      return "Congratulations! You have achieved a secure level of protection. However, it is important to stay updated with Cyber Security practices for sustained security in the future.";
     }
   };
 
